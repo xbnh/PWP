@@ -20,4 +20,4 @@ jobs:
       - name: Deploy to server
         run: |
           ssh-keyscan -H heshamelhamdani.com >> ~/.ssh/known_hosts 
-          scp -r ./dist/* helhamdani@heshamelhamdani.com:/var/www/heshamelhamdani.com/html
+          scp -r * helhamdani@heshamelhamdani.com:/var/www/heshamelhamdani.com/html

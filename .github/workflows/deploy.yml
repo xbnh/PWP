@@ -8,7 +8,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-git ommit
+
     steps:
       - uses: actions/checkout@v4
       # Make sure the @v0.9.0 matches the current version of the action

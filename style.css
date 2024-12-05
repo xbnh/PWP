@@ -1,0 +1,126 @@
+.bg {
+    background-color: #0f172a;
+    background-size: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.details.open {
+    max-height: 1000px; /* Adjust this depending on content size */
+}
+
+
+.bar {
+    background-color: #4CAF50;
+    height: 25px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* Align both sections to the start */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 50px; /* Maintain space between left and right sections */
+}
+
+.left-section h1 {
+    margin-bottom: 9px;
+    font-size: 50px;
+}
+
+.left-section h2 {
+    font-size: 24px;
+}
+
+.left-section p {
+    color: #94A3BA;
+    font-size: 16px;
+}
+.left-section {
+    position: fixed;
+    top: 50px; /* Adjust the top positioning */
+    left: 50px; /* Adjust the left positioning */
+    width: 500px; /* Set a fixed width */
+    color: #e5e7eb;
+    color: #e5e7eb;
+    font-family: Inter;
+    width: 50%; /* Fixed width */
+}
+
+
+.right-section {
+    color: #94A3BA;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 1.6;
+    width: 55%;
+    align-self: flex-start;
+    margin-top: 40px;
+
+    margin-left: 300px;
+    padding: 20px;
+    color: #94A3BA;
+    flex-grow: 1;
+}
+
+.spotlight {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 1000px; /* Spotlight size */
+        height: 1000px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(30, 45, 88, 0.3) 20%, rgba(255, 255, 255, 0) 60%, rgba(15, 23, 42, 0.1) 100%);
+        pointer-events: none; /* Ignore mouse events */
+        mix-blend-mode: screen; /* Lighten effect on the background */
+        z-index: 2;
+        transition: left 0.05s, top 0.05s; /* Smooth follow effect */
+}
+
+.nav-links ul {
+    font-size: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 15px 0;
+}
+
+.nav-links a {
+    position: relative;
+    color: #94A3BA;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.nav-links a:hover,
+.nav-links a:hover::before {
+    color: white;
+    transform: scale(1.1);
+}
+
+
+h2 img {
+    width: 50%;
+    height: 50%
+}
+
+.flex {
+    display: flex;
+}
+
